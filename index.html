@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Numeric Keypad</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<input id="display" class="display" type="text" name="text" disabled />
+			<div class="row">
+				<button class="number" value="1" onclick="storeNumber(1)">1</button>
+				<button class="number" value="2" onclick="storeNumber(2)">2<span>ABC</span></button>
+				<button class="number" value="3" onclick="storeNumber(3)">3<span>DEF</span></button>
+			</div>
+			<div class="row">
+				<button class="number" value="4" onclick="storeNumber(4)">4<span>GHI</span></button>
+				<button class="number" value="5" onclick="storeNumber(5)">5<span>JKL</span></button>
+				<button class="number" value="6" onclick="storeNumber(6)">6<span>MNO</span></button>
+			</div>
+			<div class="row">
+				<button class="number" value="7" onclick="storeNumber(7)">7<span class="four_lettter">PQRS</span></button>
+				<button class="number" value="8" onclick="storeNumber(8)">8<span>TUV</span></button>
+				<button class="number" value="9" onclick="storeNumber(9)">9<span class="four_lettter">WXYZ</span></button>
+			</div>
+			<div class="row">
+				<button class="number" value="*" onclick="storeNumber('*')">
+					<i class="fas fa-star-of-life"></i>
+				</button>
+				<button class="number" value="0" onclick="storeNumber(0)">0<span class="zero_plus">+</span></button>
+				<button class="number" value="<" onclick="removeNumber()">
+					<i class="fas fa-backspace"></i>
+				</button>
+			</div>
+			<div class="row">
+				<a class="call" href="#" onclick="callNumber()">
+					<i class="fas fa-phone"></i>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
+
